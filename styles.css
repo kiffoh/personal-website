@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+
+    background-color: lightblue;
+}
+
+#home {
+    font-size: large;
+    font-weight: bold;
+}
+
+.header-nav-inner {
+    display: flex;
+    gap: 1em;
+}
+
+/* PROJECTS */
+
+section {
+    margin: 19.92px 0;
+    padding: 0 1em;
+}
+
+.overall-projects-container {
+    display: grid;
+    gap: 1em;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-screenshot {
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.project-name {
+    margin: 10px 0;
+}
+
+.project-description {
+    padding: 0 16px;
+    margin: 0 0 16px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: lightblue;
+    padding-bottom: 16px;
+}
+
+.contact-me-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+        "contact-me links"
+        "get-in-touch links";
+
+    padding: 0 16px;
+}
+
+.contact-me-title {
+    grid-area: contact-me;
+}
+
+.get-in-touch-text {
+    grid-area: get-in-touch;
+    margin: 0;
+}
+
+.footer-nav-bottom {
+    grid-area: links;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
