@@ -37,6 +37,8 @@ section {
 .overall-projects-container {
     display: grid;
     gap: 1em;
+
+    justify-items: center;
 }
 
 .project-container {
@@ -102,4 +104,16 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+}
+
+@media (min-width: 425px) {
+    .overall-projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .overall-projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
