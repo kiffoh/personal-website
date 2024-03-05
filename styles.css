@@ -27,9 +27,19 @@ header {
     gap: 1em;
 }
 
+/* ABOUT ME */
+section.about-me {
+    padding: 0 1em;
+}
+
+.background-image {
+    background-image: url("lambs stock photo.jpg");
+    background-size: contain;
+}
+
 /* PROJECTS */
 
-section {
+section.projects {
     margin: 19.92px 0;
     padding: 0 1em;
 }
@@ -76,6 +86,7 @@ section {
 footer {
     background-color: lightblue;
     padding-bottom: 16px;
+    max-width: 425px;
 }
 
 .contact-me-container {
@@ -106,9 +117,22 @@ footer {
     justify-content: flex-end;
 }
 
+.monkey-photo-container>img {
+    width: calc(100% - 2em);
+    margin: 1em;
+    object-fit: scale-down;
+}
+
+
+/* MEDIA QUERIES */
+
 @media (min-width: 425px) {
     .overall-projects-container {
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    }
+
+    footer {
+        max-width: 100%;
     }
 }
 
