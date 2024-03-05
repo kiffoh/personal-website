@@ -116,4 +116,10 @@ footer {
     .overall-projects-container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+
+    .contact-me-container {
+        gap: 0 1em;
+        justify-items: start;
+        justify-content: end;
+    }
 }
