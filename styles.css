@@ -117,10 +117,11 @@ footer {
     justify-content: flex-end;
 }
 
-.monkey-photo-container>img {
+.horse-photo-container > picture * {
     width: calc(100% - 2em);
     margin: 1em;
     object-fit: scale-down;
+    display: block;
 }
 
 
